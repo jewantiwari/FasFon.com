@@ -1,6 +1,19 @@
-h1{
+h2{
     text-align: center;
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(42, 42, 226)0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     size: 25rem;
 }
+
+
+.logo{
+    border-radius: 50%; 
+    width: 5em;
+    height: 5em; 
+}
+
+ul>li {
+    font-size: 1.4em; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

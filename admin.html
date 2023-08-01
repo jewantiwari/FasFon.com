@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Movie Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+
+
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="actors" class="form-label">Actors</label>
+        <input type="text" class="form-control" id="actors" name="actors" required>
+      </div>
+      <div class="mb-3">
+        <label for="directors" class="form-label">Directors</label>
+        <input type="text" class="form-control" id="directors" name="directors" required>
+      </div>
+      <div class="mb-3">
+        <label for="fasfon_rating" class="form-label">FasFon Rating</label>
+        <input type="number" class="form-control" id="fasfon_rating" name="fasfon_rating" min="1" max="10" step="0.1" required>
+      </div>
+      <div class="mb-3">
+        <label for="poster" class="form-label">Poster</label>
+        <input type="file" class="form-control" id="poster" name="poster" accept="image/*" required>
+      </div>
+      <div class="mb-3">
+        <label for="release_date" class="form-label">Release Date</label>
+        <input type="date" class="form-control" id="release_date" name="release_date" required>
+      </div>
+      <div class="mb-3">
+        <label for="movie_review" class="form-label">Movie Review</label>
+        <textarea class="form-control" id="movie_review" name="movie_review" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="genre" class="form-label">Genre</label>
+        <select class="form-control" id="genre" name="genre" required>
+            <option value="">Select Genre</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="Horror">Horror</option>
+            <option value="Sci-Fi">Sci-Fi (Science Fiction)</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Crime">Crime</option>
+            <option value="Historical">Historical</option>
+            <option value="Animation">Animation</option>
+            <option value="Family">Family</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Musical">Musical</option>
+            <option value="Western">Western</option>
+            <option value="War">War</option>
+            <option value="Sports">Sports</option>
+            <option value="Superhero">Superhero</option>
+          </select>   
+      </div>
+      <div class="mb-3">
+        <label for="movie_type" class="form-label">Movie Type</label>
+        <select class="form-control" id="movie_type" name="movie_type" required>
+          <option value="">Select Movie Type</option>
+          <option value="Hollywood">Hollywood</option>
+          <option value="Bollywood">Bollywood</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-o+s6Tf8PnQPWOpSyA2J4mSCJ5Nw8YvmwTv7u+Mzgx5Iwux1+oZcT7utMNi+U4M0l" crossorigin="anonymous"></script>
+</body>
+</html>
