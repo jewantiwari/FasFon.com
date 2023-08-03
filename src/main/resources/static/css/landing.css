@@ -1,0 +1,86 @@
+h2 {
+    color: rgb(42, 42, 226)0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: red;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+ul>li {
+    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #a48cb4;
+    border-radius: 1%;
+}
+
+
+
+.card {  
+    background-color: red;
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .poster {
+    height: auto;
+    border-radius: 5px; 
+    transition: filter 0.3s;
+  }
+
+  .card:hover .poster {
+    filter: blur(5px);
+  }
+
+  .card-description {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+
+  .card:hover .card-description {
+    opacity: 1; 
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 10px; 
+    text-align: left; 
+  }
+
+  .card-rating {
+    font-size: 14px;
+    margin-top: auto; 
+    text-align: center; 
+  }
+
+  .card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .card-text:last-child {
+    margin-bottom: 0;
+  }
