@@ -25,6 +25,69 @@ const questions = [
             {text: "Ice Age", correct: false},
             {text: "The Lion King", correct: true}
         ]
+    },
+    {
+        question: "In which movie does Keanu Reeves play the character Neo, a computer programmer who discovers that reality is a simulated world created by machines?",
+        answers: [
+            {text: "The Matrix", correct: true},
+            {text: "Inception", correct: false},
+            {text: "Interstellar", correct: false},
+            {text: "Blade Runner", correct: false}
+        ]
+     },
+    {
+            question: "Who directed the fantasy adventure film 'Avatar,' released in 2009?",
+            answers: [
+            {text: "Steven Spielberg", correct: false},
+            {text: "James Cameron", correct: true},
+            {text: "Christopher Nolan", correct: false},
+            {text: "Peter Jackson", correct: false}
+            ]
+    },
+    {
+            question: "Who played the role of the Joker in the 2008 film 'The Dark Knight'?",
+            answers: [
+            {text: "Heath Ledger", correct: true},
+            {text: "Joaquin Phoenix", correct: false},
+            {text: "Jack Nicholson", correct: false},
+            {text: "Jared Leto", correct: false}
+            ]
+    },
+    {
+        question: "Which movie is known for its famous line 'May the Force be with you.'?",
+        answers: [
+        {text: "Star Trek", correct: false},
+        {text: "Star Wars", correct: true},
+        {text: "Guardians of the Galaxy", correct: false},
+        {text: "Interstellar", correct: false}
+        ]
+    },
+    {
+        question: "Which film won the Best Picture Oscar at the 2020 Academy Awards?",
+        answers: [
+        {text: "1917", correct: false},
+        {text: "Parasite", correct: true},
+        {text: "Joker", correct: false},
+        {text: "Once Upon a Time in Hollywood", correct: false}
+        ]
+    },
+    {
+        question: "In the movie 'Forrest Gump', what is Forrest's favorite candy?",
+        answers: [
+        {text: "M&Ms", correct: true},
+        {text: "Skittles", correct: false},
+        {text: "Twix", correct: false},
+        {text: "Snickers", correct: false}
+        ]
+    },
+    {
+        question: "Which movie features a group of superheroes including Iron Man, Captain America, and Thor?",
+        answers: [
+        {text: "Justice League", correct: false},
+        {text: "The Avengers", correct: true},
+        {text: "X-Men", correct: false},
+        {text: "Fantastic Four", correct: false}
+        ]
     }
 ];
 
