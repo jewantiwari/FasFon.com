@@ -151,10 +151,30 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
-
+function showLevel(score) {
+    let level = '';
+    let message = '';
+    if (score <= 3) {
+        level = "Beginner";
+        message = "Keep watching more movies and you'll become a movie expert!";
+    } else if (score <= 6) {
+        level = "Intermediate!";
+        message = "You've got some good movie knowledge. Keep it up!";
+    } else if (score <= 9) {
+        level = "Advanced!";
+        message = "Impressive! You're a true movie buff."
+    } else {
+        level = "Expert!";
+        message = "Wow! You must be a walking IMDb database!"
+    }
+    return {level , message };
+}
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    const level = showLevel(score);
+    questionElement.innerHTML+= `<br> Your level of movie knowledge: ${level.level}`;
+    questionElement.innerHTML+= `<br> ${level.message}`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
