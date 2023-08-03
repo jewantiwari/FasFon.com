@@ -27,6 +27,8 @@ const getMovies = async () => {
               <p class='card-text'>Release Date: ${releaseDateFormatted}</p>
               <p class='card-text'>Genre: ${movie.genre}</p>
               <p class='card-text'>${movie.movie_review}</p>
+              <button class="btn" type="button"><a href="#">Trailer</a></button>
+
             </div>
             <div class='card-rating p-1'>
               ${movie.movie_name} by ${movie.directors}

@@ -3,30 +3,39 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: red;
+.btn{
+  background-color: rgb(78,27,99); 
+}
+
+a {
+  color:coral ; 
+  text-decoration: none;
 }
 
 .logo {
-    border-radius: 50%;
-    width: 5em;
-    height: 5em;
+    border-radius:50% ;
+    width: 4em;
+    height: 4em;
 }
 
 ul>li {
-    font-size: 1.4em;
+    font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
-    background-color: #a48cb4;
+    background-color: #FF5733  ;
     border-radius: 1%;
 }
 
-
+body {
+  background-color:  #fff3b0;
+  color: #d90429;
+}
 
 .card {  
-    background-color: red;
+    /* background-color: #FF5733; */
+    background-color:  #fff3b0;
     position: relative; 
     overflow: hidden; 
     border-radius: 1px; 
@@ -83,4 +92,13 @@ nav {
 
   .card-text:last-child {
     margin-bottom: 0;
+  }
+
+
+  @media only screen and (max-width: 960px) {
+      h2 {
+        color: rgb(42, 42, 226)0ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center; 
+    }
   }
