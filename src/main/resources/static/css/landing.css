@@ -1,10 +1,6 @@
 h2 {
-    text-align: center;
-    box-sizing: border-box; 
     color: rgb(42, 42, 226)0ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 3px solid yellow; 
-    background-color: rgb(164,140,180) 
 }
 
 body {
@@ -31,24 +27,24 @@ nav {
 
 .card {  
     background-color: red;
-    position: relative; /* Make the card position relative to enable absolute positioning for the description */
-    overflow: hidden; /* Hide the overflow to contain the blurred image */
-    border-radius: 1px; /* Add some border-radius for a rounded corner effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for a card-like appearance */
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
 
   .poster {
     height: auto;
     border-radius: 5px; 
-    transition: filter 0.3s; /* Add a transition effect to smoothly animate the blur */
+    transition: filter 0.3s;
   }
 
   .card:hover .poster {
-    filter: blur(5px); /* Apply the blur effect when hovering over the card */
+    filter: blur(5px);
   }
 
   .card-description {
-    position: absolute; /* Position the description absolutely within the card */
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
@@ -57,27 +53,27 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px;
     text-align: center;
-    opacity: 0; /* Initially hide the description */
-    transition: opacity 0.3s; /* Add a transition effect to smoothly animate the opacity */
+    opacity: 0; 
+    transition: opacity 0.3s; 
   }
 
   .card:hover .card-description {
-    opacity: 1; /* Show the description when hovering over the card */
+    opacity: 1; 
   }
 
   .card-title {
     font-size: 16px;
-    margin-bottom: 10px; /* Add some margin between movie name and actors */
-    text-align: left; /* Align the movie name to the left */
+    margin-bottom: 10px; 
+    text-align: left; 
   }
 
   .card-rating {
     font-size: 14px;
-    margin-top: auto; /* Push the rating to the bottom of the card */
-    text-align: center; /* Align the rating to the center horizontally */
+    margin-top: auto; 
+    text-align: center; 
   }
 
   .card-text {
@@ -86,5 +82,5 @@ nav {
   }
 
   .card-text:last-child {
-    margin-bottom: 0; /* Remove the bottom margin for the last paragraph (movie_review) */
+    margin-bottom: 0;
   }
